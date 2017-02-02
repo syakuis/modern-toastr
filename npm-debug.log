@@ -1,0 +1,129 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@4.0.5
+3 info using node@v6.9.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/syaku/develop/github/modern-toastr',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/syaku/.npm/modern-toastr/1.0.8/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/syaku/.npm correctMkdir not in flight; initializing
+10 info lifecycle modern-toastr@1.0.8~prepublish: modern-toastr@1.0.8
+11 silly lifecycle modern-toastr@1.0.8~prepublish: no script for prepublish, continuing
+12 info lifecycle modern-toastr@1.0.8~prepare: modern-toastr@1.0.8
+13 silly lifecycle modern-toastr@1.0.8~prepare: no script for prepare, continuing
+14 verbose tar pack [ '/Users/syaku/.npm/modern-toastr/1.0.8/package.tgz',
+14 verbose tar pack   '/Users/syaku/develop/github/modern-toastr' ]
+15 verbose tarball /Users/syaku/.npm/modern-toastr/1.0.8/package.tgz
+16 verbose folder /Users/syaku/develop/github/modern-toastr
+17 verbose addLocalTarball adding from inside cache /Users/syaku/.npm/modern-toastr/1.0.8/package.tgz
+18 verbose correctMkdir /Users/syaku/.npm correctMkdir not in flight; initializing
+19 silly cache afterAdd modern-toastr@1.0.8
+20 verbose afterAdd /Users/syaku/.npm/modern-toastr/1.0.8/package/package.json not in flight; writing
+21 verbose correctMkdir /Users/syaku/.npm correctMkdir not in flight; initializing
+22 verbose afterAdd /Users/syaku/.npm/modern-toastr/1.0.8/package/package.json written
+23 silly publish { name: 'modern-toastr',
+23 silly publish   version: '1.0.8',
+23 silly publish   description: 'modern toastr',
+23 silly publish   author: { name: 'Syaku', email: 'http://syaku.tistory.com', url: '최석균' },
+23 silly publish   license: 'MIT',
+23 silly publish   main: 'dist/modern-toastr.js',
+23 silly publish   repository:
+23 silly publish    { type: 'git',
+23 silly publish      url: 'git+https://github.com/syakuis/modern-toastr.git' },
+23 silly publish   scripts: { webpack: 'webpack', serv: 'webpack-dev-server' },
+23 silly publish   keywords: [ 'toastr', 'react', 'react-toastr', 'modern-toastr', 'js', 'es6' ],
+23 silly publish   devDependencies:
+23 silly publish    { 'babel-core': '^6.21.0',
+23 silly publish      'babel-loader': '^6.2.8',
+23 silly publish      'babel-plugin-transform-object-assign': '^6.8.0',
+23 silly publish      'babel-preset-es2015': '^6.18.0',
+23 silly publish      'babel-preset-stage-0': '^6.16.0',
+23 silly publish      'css-loader': '^0.26.1',
+23 silly publish      eslint: '^3.13.1',
+23 silly publish      'eslint-config-airbnb': '^14.0.0',
+23 silly publish      'eslint-loader': '^1.6.1',
+23 silly publish      'eslint-plugin-import': '^2.2.0',
+23 silly publish      'eslint-plugin-react': '^6.9.0',
+23 silly publish      'extract-text-webpack-plugin': '^2.0.0-rc.2',
+23 silly publish      'html-webpack-plugin': '^2.24.1',
+23 silly publish      'style-loader': '^0.13.1',
+23 silly publish      webpack: '^2.2.1',
+23 silly publish      'webpack-dev-server': '^1.16.3' },
+23 silly publish   dependencies: { toastr: '^2.1.2' },
+23 silly publish   readme: '## Modern Toastr \n\n이미 개발된 toastr 를 jQuery 제거한 현대적인 방식으로 재개발하였습니다. 모든 기능을 구현하지 않았지만 앞으로 하나씩 추가하도록하겠습니다.\n\nhttp://codeseven.github.io/toastr/\n\nwebpack 2.x  \nbabel 6.x (es2015, stage-0)\n\n#### Install\n\n```\n$ npm install -S modern-toastr\n```\n\n#### Setting\n\n**< / > API calls**\n\n```\n<link href="modern-toastr.css" rel="stylesheet">\n<script type="text/javascript" src="modern-toastr.js"></script>\n```\n\n**< / > React & ES6**\n\n```\nimport Toast from \'modern-toast\';\n```\n\n**< / > Exemple**\n```\nToast.[type]( [message], [title], [options] );\n\nToast.success(\'saved!!\');\nToast.info(\'saved!!\');\nToast.warn(\'saved!!\');\nToast.error(\'saved!!\');\n\n\n/*\ntoast-top-right\ntoast-top-left\ntoast-bottom-right\ntoast-bottom-left\ntoast-top-full-width\ntoast-bottom-full-width\ntoast-top-center\ntoast-bottom-center\n*/\nToast.setPosition(\'toast-top-left\'); // 원하는 포지션에 알림을 출력한다.\n\n// 기본설정을 변경할 수 있다.\nToast.setDefaultConfig({\n  timeOut: 1000,\n  closeButton: true,\n  newestOnTop: true,\n  progressBar: true,\n});\n```\n\n#### Options\n\n```js\n{\n  config: {\n    timeOut: 5000,\n    closeButton: false,\n    newestOnTop: false,\n    progressBar: false,\n  },\n  /*\n  toast-top-right\n  toast-top-left\n  toast-bottom-right\n  toast-bottom-left\n  toast-top-full-width\n  toast-bottom-full-width\n  toast-top-center\n  toast-bottom-center\n  */\n  positionClass: \'toast-top-right\',\n}\n```\n\n자세한 설명은 https://github.com/CodeSeven/toastr 참고하세요.\n',
+23 silly publish   readmeFilename: 'README.md',
+23 silly publish   gitHead: '053cbd744b3a0110c2dddb7a58385b1f8fceac59',
+23 silly publish   bugs: { url: 'https://github.com/syakuis/modern-toastr/issues' },
+23 silly publish   homepage: 'https://github.com/syakuis/modern-toastr#readme',
+23 silly publish   _id: 'modern-toastr@1.0.8',
+23 silly publish   _shasum: '06a36b99dec466a0f24464f3b614eb05cdf18229',
+23 silly publish   _from: '.' }
+24 info lifecycle modern-toastr@1.0.8~prepublishOnly: modern-toastr@1.0.8
+25 silly lifecycle modern-toastr@1.0.8~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name modern-toastr
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'modern-toastr',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'modern-toastr',
+30 silly mapToRegistry   name: 'modern-toastr',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/modern-toastr
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /Users/syaku/.npm/modern-toastr/1.0.8/package.tgz
+34 verbose request uri https://registry.npmjs.org/modern-toastr
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 22:06:46
+37 verbose request using bearer token for auth
+38 verbose request id b4fecc9f1cbbdd2e
+39 http request PUT https://registry.npmjs.org/modern-toastr
+40 http 403 https://registry.npmjs.org/modern-toastr
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '95',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Thu, 02 Feb 2017 13:06:47 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-nrt6121-NRT',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1486040806.645263,VS0,VE686',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 verbose request invalidating /Users/syaku/.npm/registry.npmjs.org/modern-toastr on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: "You cannot publish over the previously published version 1.0.8." : modern-toastr
+44 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+44 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+44 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:191:7)
+44 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+44 verbose stack     at emitOne (events.js:96:13)
+44 verbose stack     at Request.emit (events.js:188:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+45 verbose statusCode 403
+46 verbose pkgid modern-toastr
+47 verbose cwd /Users/syaku/develop/github/modern-toastr
+48 error Darwin 16.3.0
+49 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+50 error node v6.9.1
+51 error npm  v4.0.5
+52 error code E403
+53 error "You cannot publish over the previously published version 1.0.8." : modern-toastr
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]

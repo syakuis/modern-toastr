@@ -1,5 +1,14 @@
-var Toastr =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["Toastr"] = factory();
+	else
+		root["Toastr"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	function hotDisposeChunk(chunkId) {
 /******/ 		delete installedChunks[chunkId];
 /******/ 	}
@@ -60,7 +69,7 @@ var Toastr =
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0a282742e85f20cbd85e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "03da8eff8ca571f7da31"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -894,13 +903,8 @@ exports.default = Toastr;
 "use strict";
 
 
-var _toastr = __webpack_require__(0);
-
-var _toastr2 = _interopRequireDefault(_toastr);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = _toastr2.default;
+module.exports = __webpack_require__(0).default;
 
 /***/ })
 /******/ ]);
+});

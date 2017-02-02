@@ -4,18 +4,18 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './index.js',
   output: {
-    libraryTarget: "var",
-    library: "Toastr",
-    path: 'build',
+    path: 'dist',
     publicPath: '',
-    filename: 'index.js'
+    filename: 'modern-toastr.js',
+    library: 'Toastr',
+    libraryTarget: 'umd'
   },
 
   plugins: [
     new ExtractTextPlugin({
-      filename: "toastr.css",
+      filename: "modern-toastr.css",
     }),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
@@ -53,6 +53,6 @@ module.exports = {
     hot: true, // html 자동 리로드여부를 선택합니다. (정확한 역활을 모르겠네요)
     port:8088,
     host: '0.0.0.0',
-    contentBase: './build' // 서버 웹루트 경로를 설정합니다.
+    contentBase: './dist' // 서버 웹루트 경로를 설정합니다.
   }
 };

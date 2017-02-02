@@ -1,18 +1,26 @@
 {
   "name": "modern-toastr",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "modern toastr",
   "author": "Syaku (최석균) <http://syaku.tistory.com>",
   "license": "MIT",
-  "main": "./build",
+  "main": "dist/modern-toastr.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/npm/npm.git"
+    "url": "https://github.com/syakuis/modern-toastr.git"
   },
   "scripts": {
     "webpack": "webpack",
     "serv": "webpack-dev-server"
   },
+  "keywords": [
+    "toastr",
+    "react",
+    "react-toastr",
+    "modern-toastr",
+    "js",
+    "es6"
+  ],
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.8",
