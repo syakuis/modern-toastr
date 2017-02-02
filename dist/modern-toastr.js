@@ -69,7 +69,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "03da8eff8ca571f7da31"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "cfe665395e420997a30b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -872,7 +872,9 @@ var Toastr = {
   },
   setPosition: function setPosition(positionClass) {
     ToastrProps.positionClass = positionClass || 'toast-top-right';
-    ToastrProps.container.className = ToastrProps.positionClass;
+    if (ToastrProps.container) {
+      ToastrProps.container.className = ToastrProps.positionClass;
+    }
   },
   info: function info(message, title, options) {
     new ToastrConteiner('info', message, title, options).display();
