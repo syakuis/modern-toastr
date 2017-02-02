@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>modern toastr examples</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="toastr.css" rel="stylesheet"></head>
+<body>
+  <div class="conteiner">
+  <button type="button" class="btn btn-primary" onclick="Toastr.success('good');">success</button>
+  <button type="button" class="btn btn-primary" onclick="Toastr.info('message', 'title', { progressBar: true });">info</button>
+  <button type="button" class="btn btn-primary" onclick="Toastr.error('error', null, { newestOnTop: true });">error</button>
+  <button type="button" class="btn btn-primary" onclick="Toastr.warn('hothot', null, { closeButton: true });">warn</button>
+
+  <button type="button" class="btn btn-primary" onclick="Toastr.setPosition('toast-top-full-width');">position change</button>
+  </div>
+<script type="text/javascript" src="index.js"></script></body>
+</html>
