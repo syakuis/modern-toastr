@@ -131,7 +131,9 @@ const Toastr = {
   },
   setPosition: (positionClass) => {
     ToastrProps.positionClass = positionClass || 'toast-top-right';
-    ToastrProps.container.className = ToastrProps.positionClass;
+    if (ToastrProps.container) {
+      ToastrProps.container.className = ToastrProps.positionClass;
+    }
   },
   info: (message, title, options) => {
     new ToastrConteiner('info', message, title, options).display();

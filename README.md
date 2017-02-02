@@ -13,6 +13,16 @@ babel 6.x (es2015, stage-0)
 $ npm install -S modern-toastr
 ```
 
+#### Demo
+
+```
+$ npm update
+$ npm run serv
+```
+
+http://localhost:8088/demo.html
+
+
 #### Setting
 
 **< / > API calls**
