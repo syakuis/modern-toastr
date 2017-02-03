@@ -1,6 +1,6 @@
 {
   "name": "modern-toastr",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "modern toastr",
   "author": "Syaku (최석균) <http://syaku.tistory.com>",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "url": "https://github.com/syakuis/modern-toastr.git"
   },
   "scripts": {
-    "webpack": "webpack",
+    "webpack": "webpack --colors --progress -p",
     "serv": "webpack-dev-server"
   },
   "keywords": [
