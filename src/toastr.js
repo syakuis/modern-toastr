@@ -1,3 +1,9 @@
+/**
+ * @date 2017-02-03 12:06:41
+ * @author Seok Kyun. Choi. 최석균 (Syaku)
+ * @site http://syaku.tistory.com
+ */
+
 import 'toastr/build/toastr.css';
 
 const ToastrProps = {
@@ -101,13 +107,13 @@ class ToastrConteiner {
 
     intervalStart();
 
-    ele.onmouseout = function () {
+    ele.onmouseout = () => {
       intervalStart();
     };
 
-    ele.onmouseover = function () {
+    ele.onmouseover = () => {
       clearInterval(interval);
-      
+
       if (progressBar.enable === true) {
         clearInterval(progress);
         progressBar.target.style.width = '0%';
@@ -115,7 +121,7 @@ class ToastrConteiner {
     };
 
     if (this.config.closeButton) {
-      ele.querySelector('.toast-close-button').onclick = function () {
+      ele.querySelector('.toast-close-button').onclick = () => {
         intervalStop();
       };
     }

@@ -69,7 +69,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cfe665395e420997a30b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a848b51fe1ed506a871e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -732,7 +732,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      * @date 2017-02-03 12:06:41
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      * @author Seok Kyun. Choi. 최석균 (Syaku)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      * @site http://syaku.tistory.com
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
 
 __webpack_require__(1);
 
@@ -904,6 +908,12 @@ exports.default = Toastr;
 
 "use strict";
 
+
+/**
+ * @date 2017-02-03 13:21:40
+ * @author Seok Kyun. Choi. 최석균 (Syaku)
+ * @site http://syaku.tistory.com
+ */
 
 module.exports = __webpack_require__(0).default;
 
