@@ -28,7 +28,7 @@ const ToastrProps = {
   closeHtml: '<button type="button" class="toast-close-button" role="button">&times;</button>',
 };
 
-class ToastrConteiner {
+class ToastrContainer {
   constructor(type, message, title, config) {
     this.type = type || 'success';
     this.message = message;
@@ -142,16 +142,16 @@ const Toastr = {
     }
   },
   info: (message, title, options) => {
-    new ToastrConteiner('info', message, title, options).display();
+    new ToastrContainer('info', message, title, options).display();
   },
   success: (message, title, options) => {
-    new ToastrConteiner('success', message, title, options).display();
+    new ToastrContainer('success', message, title, options).display();
   },
   warn: (message, title, options) => {
-    new ToastrConteiner('warning', message, title, options).display();
+    new ToastrContainer('warning', message, title, options).display();
   },
   error: (message, title, options) => {
-    new ToastrConteiner('error', message, title, options).display();
+    new ToastrContainer('error', message, title, options).display();
   },
 };
 
