@@ -56,9 +56,8 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader', // 로더를 설정합니다.
         query: {
-          presets: ['es2015', 'stage-0'],
+          presets: ['es2015', 'stage-3'],
           'plugins': [
-            'transform-object-assign'
           ]
         }
       }

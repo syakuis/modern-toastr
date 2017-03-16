@@ -2,8 +2,6 @@
 
 이미 개발된 toastr 를 jQuery 제거한 현대적인 방식으로 재개발하였습니다. 모든 기능을 구현하지 않았지만 앞으로 하나씩 추가하도록하겠습니다.
 
-http://codeseven.github.io/toastr/
-
 webpack 2.x  
 babel 6.x (es2015, stage-0)
 
