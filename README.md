@@ -34,6 +34,8 @@ http://localhost:8088/demo.html
 
 ```
 import Toast from 'modern-toast';
+
+import 'modern-toastr/dist/modern-toastr.css';
 ```
 
 **< / > Exemple**
